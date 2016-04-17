@@ -8,7 +8,6 @@ feature 'Search by attribute' do
 	end
 
 	scenario 'Search by evaluation' do
-
 		select 'UV'
 		select 'Évaluation'
 		select 'Médian'
