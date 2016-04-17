@@ -15,7 +15,7 @@ feature 'Search by attribute' do
 		expect(page).to have_content 'NF19 – Administration et virtualisation des systèmes et des bases de données'
 	end
 
-	scenario 'search by responsible' do
+	scenario 'Search by responsible' do
 		select 'UV'
 		select 'Responsable'
 		select 'Aurélien Bénel'
