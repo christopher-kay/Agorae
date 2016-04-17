@@ -8,17 +8,17 @@ feature 'Search by attribute' do
 	end
 
 	scenario 'Search by evaluation' do
-		select 'UV'
-		select 'Évaluation'
-		select 'Médian'
+		select 'UV', :from => 'Corpus'
+		select 'Évaluation', :from => 'Nom'
+		select 'Médian', :from => 'Valeur'
 		click_on 'Rechercher'
 		expect(page).to have_content 'NF19 – Administration et virtualisation des systèmes et des bases de données'
 	end
 
 	scenario 'Search by responsible' do
-		select 'UV'
-		select 'Responsable'
-		select 'Aurélien Bénel'
+		select 'UV', :from => 'Corpus'
+		select 'Responsable', :from => 'Nom'
+		select 'Aurélien Bénel', :from => 'Valeur'
 		click_on 'Rechercher'
 		expect(page).to have_content 'IF14 – Analyse du système d'information'
 		expect(page).to have_content 'IF09 – Systèmes documentaires'
