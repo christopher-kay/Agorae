@@ -10,7 +10,7 @@ feature 'Create and edit an item' do
 
 	scenario 'Create an item' do
 		click_on 'OFF'
-		click_link('add ctl hide') //Bouton '+'
+		click_link('add ctl hide') //Classe du bouton '+'
 	end
 
 	scenario 'Edit an item' do
